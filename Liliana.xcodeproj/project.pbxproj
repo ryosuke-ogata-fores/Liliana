@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */; };
+		F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */; };
+		F9575EE419FFE0FB003E69EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE319FFE0FB003E69EA /* ViewController.swift */; };
+		F9575EE719FFE0FB003E69EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9575EE519FFE0FB003E69EA /* Main.storyboard */; };
+		F9575EE919FFE0FB003E69EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9575EE819FFE0FB003E69EA /* Images.xcassets */; };
+		F9575EEC19FFE0FB003E69EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9575EEA19FFE0FB003E69EA /* LaunchScreen.xib */; };
+		F9575EF819FFE0FB003E69EA /* LilianaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EF719FFE0FB003E69EA /* LilianaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9575EF219FFE0FB003E69EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9575ED119FFE0FB003E69EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9575ED819FFE0FB003E69EA;
+			remoteInfo = Liliana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9575ED919FFE0FB003E69EA /* Liliana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liliana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9575EDD19FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9575EE119FFE0FB003E69EA /* Liliana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Liliana.xcdatamodel; sourceTree = "<group>"; };
+		F9575EE319FFE0FB003E69EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9575EE619FFE0FB003E69EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9575EE819FFE0FB003E69EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F9575EEB19FFE0FB003E69EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F9575EF119FFE0FB003E69EA /* LilianaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilianaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9575EF619FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9575EF719FFE0FB003E69EA /* LilianaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilianaTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9575ED619FFE0FB003E69EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9575EEE19FFE0FB003E69EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9575ED019FFE0FB003E69EA = {
+			isa = PBXGroup;
+			children = (
+				F9575EDB19FFE0FB003E69EA /* Liliana */,
+				F9575EF419FFE0FB003E69EA /* LilianaTests */,
+				F9575EDA19FFE0FB003E69EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9575EDA19FFE0FB003E69EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9575ED919FFE0FB003E69EA /* Liliana.app */,
+				F9575EF119FFE0FB003E69EA /* LilianaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9575EDB19FFE0FB003E69EA /* Liliana */ = {
+			isa = PBXGroup;
+			children = (
+				F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */,
+				F9575EE319FFE0FB003E69EA /* ViewController.swift */,
+				F9575EE519FFE0FB003E69EA /* Main.storyboard */,
+				F9575EE819FFE0FB003E69EA /* Images.xcassets */,
+				F9575EEA19FFE0FB003E69EA /* LaunchScreen.xib */,
+				F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */,
+				F9575EDC19FFE0FB003E69EA /* Supporting Files */,
+			);
+			path = Liliana;
+			sourceTree = "<group>";
+		};
+		F9575EDC19FFE0FB003E69EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9575EDD19FFE0FB003E69EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9575EF419FFE0FB003E69EA /* LilianaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9575EF719FFE0FB003E69EA /* LilianaTests.swift */,
+				F9575EF519FFE0FB003E69EA /* Supporting Files */,
+			);
+			path = LilianaTests;
+			sourceTree = "<group>";
+		};
+		F9575EF519FFE0FB003E69EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9575EF619FFE0FB003E69EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9575ED819FFE0FB003E69EA /* Liliana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9575EFB19FFE0FB003E69EA /* Build configuration list for PBXNativeTarget "Liliana" */;
+			buildPhases = (
+				F9575ED519FFE0FB003E69EA /* Sources */,
+				F9575ED619FFE0FB003E69EA /* Frameworks */,
+				F9575ED719FFE0FB003E69EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Liliana;
+			productName = Liliana;
+			productReference = F9575ED919FFE0FB003E69EA /* Liliana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9575EF019FFE0FB003E69EA /* LilianaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9575EFE19FFE0FB003E69EA /* Build configuration list for PBXNativeTarget "LilianaTests" */;
+			buildPhases = (
+				F9575EED19FFE0FB003E69EA /* Sources */,
+				F9575EEE19FFE0FB003E69EA /* Frameworks */,
+				F9575EEF19FFE0FB003E69EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9575EF319FFE0FB003E69EA /* PBXTargetDependency */,
+			);
+			name = LilianaTests;
+			productName = LilianaTests;
+			productReference = F9575EF119FFE0FB003E69EA /* LilianaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9575ED119FFE0FB003E69EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = rogata;
+				TargetAttributes = {
+					F9575ED819FFE0FB003E69EA = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F9575EF019FFE0FB003E69EA = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F9575ED819FFE0FB003E69EA;
+					};
+				};
+			};
+			buildConfigurationList = F9575ED419FFE0FB003E69EA /* Build configuration list for PBXProject "Liliana" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9575ED019FFE0FB003E69EA;
+			productRefGroup = F9575EDA19FFE0FB003E69EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9575ED819FFE0FB003E69EA /* Liliana */,
+				F9575EF019FFE0FB003E69EA /* LilianaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9575ED719FFE0FB003E69EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9575EE719FFE0FB003E69EA /* Main.storyboard in Resources */,
+				F9575EEC19FFE0FB003E69EA /* LaunchScreen.xib in Resources */,
+				F9575EE919FFE0FB003E69EA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9575EEF19FFE0FB003E69EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9575ED519FFE0FB003E69EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9575EE419FFE0FB003E69EA /* ViewController.swift in Sources */,
+				F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */,
+				F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9575EED19FFE0FB003E69EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9575EF819FFE0FB003E69EA /* LilianaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9575EF319FFE0FB003E69EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9575ED819FFE0FB003E69EA /* Liliana */;
+			targetProxy = F9575EF219FFE0FB003E69EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9575EE519FFE0FB003E69EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9575EE619FFE0FB003E69EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9575EEA19FFE0FB003E69EA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9575EEB19FFE0FB003E69EA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9575EF919FFE0FB003E69EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9575EFA19FFE0FB003E69EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9575EFC19FFE0FB003E69EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Liliana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9575EFD19FFE0FB003E69EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Liliana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F9575EFF19FFE0FB003E69EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LilianaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Liliana.app/Liliana";
+			};
+			name = Debug;
+		};
+		F9575F0019FFE0FB003E69EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LilianaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Liliana.app/Liliana";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9575ED419FFE0FB003E69EA /* Build configuration list for PBXProject "Liliana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9575EF919FFE0FB003E69EA /* Debug */,
+				F9575EFA19FFE0FB003E69EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9575EFB19FFE0FB003E69EA /* Build configuration list for PBXNativeTarget "Liliana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9575EFC19FFE0FB003E69EA /* Debug */,
+				F9575EFD19FFE0FB003E69EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9575EFE19FFE0FB003E69EA /* Build configuration list for PBXNativeTarget "LilianaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9575EFF19FFE0FB003E69EA /* Debug */,
+				F9575F0019FFE0FB003E69EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9575EE119FFE0FB003E69EA /* Liliana.xcdatamodel */,
+			);
+			currentVersion = F9575EE119FFE0FB003E69EA /* Liliana.xcdatamodel */;
+			path = Liliana.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F9575ED119FFE0FB003E69EA /* Project object */;
+}
