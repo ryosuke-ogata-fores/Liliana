@@ -25,23 +25,30 @@ class MyTableViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidAppear(animated)
         // 初期データ投入（仮）
         var articles:[ArticleModel] = [];
+        // 日付フォーマッター
+        var fmt:NSDateFormatter = NSDateFormatter()
+        fmt.locale = NSLocale(localeIdentifier: "ja_JP");
+        fmt.dateFormat = "yyyy/MM/dd HH:mm:ss"
         for i in 0...20 {
-            let num = i + 1
-            let additionDay:Double = 1000 * 60 * 60 * 24
-//            additionDay *= num
-            var d:NSDate = NSDate(timeIntervalSince1970: NSDate().timeIntervalSince1970 as Double + additionDay)
+            var num:Int! = i + 1
+            var additionDay:Int! = 60 * 60 * 24 * num
+            var millis:Int = Int(NSDate().timeIntervalSince1970) + additionDay!
+            var d:NSDate = NSDate(timeIntervalSince1970: NSTimeInterval(millis))
             var dict:[String:AnyObject] = [
                 "id": 1,
                 "title": "Swift(* '-')ノ",
-                "imgUrl": (i % 2 == 0) ? "http://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_color-256.png": "http://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_color-128.png",
+                "imgUrl": (i % 2 == 0) ? "a": "http://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_color-128.png",
                 "content": "Swift is an innovative new programming language for Cocoa and Cocoa Touch.",
                 "linkUrl": "https://developer.apple.com/swift/",
-                "publishDate": "2014/01/02 10:11:12"
+                "publishDate": fmt.stringFromDate(d)
             ]
             var model:ArticleModel = ArticleModel(dict:dict)
             articles.append(model)
         }
         self.articles = articles
+//        // StoryBoardで紐づけているのでいらない
+//        self.tableView.delegate  = self
+//        self.tableView.dataSource = self
         self.tableView.reloadData()
     }
     
@@ -73,6 +80,7 @@ class MyTableViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        tableView.cellForRowAtIndexPath(indexPath)?.setEditing(true, animated: true)
     }
 
     func tableView(tableView: UITableView, indentationLevelForRowAtIndexPath indexPath: NSIndexPath) -> Int {

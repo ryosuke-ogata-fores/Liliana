@@ -117,7 +117,6 @@
                             <constraint firstItem="YYP-Ow-he7" firstAttribute="top" secondItem="Ma3-qC-2Z9" secondAttribute="bottom" id="chG-HQ-BJx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ma3-qC-2Z9" secondAttribute="trailing" constant="-16" id="xx7-pn-ReN"/>
                         </constraints>
-                        <variation key="heightClass=regular"/>
                     </view>
                     <navigationItem key="navigationItem" id="QJZ-bJ-Dx0"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
