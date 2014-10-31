@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ArticleCell" customModule="Liliana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="not" translatesAutoresizingMaskIntoConstraints="NO" id="fAe-ff-iA3">
+                    <rect key="frame" x="0.0" y="7" width="74" height="74"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="vw7-9S-4tO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0y-Jt-CYH">
+                    <rect key="frame" x="85" y="4" width="235" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS5-Cx-zKP">
+                    <rect key="frame" x="82" y="71" width="238" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="contentLabel" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-sy-z0q">
+                    <rect key="frame" x="85" y="23" width="235" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fAe-ff-iA3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="0VH-Sk-jmr"/>
+                <constraint firstAttribute="bottom" secondItem="WS5-Cx-zKP" secondAttribute="bottom" constant="2" id="2m1-m0-dCg"/>
+                <constraint firstAttribute="centerY" secondItem="fAe-ff-iA3" secondAttribute="centerY" id="7dx-Sa-Sr2"/>
+                <constraint firstItem="WS5-Cx-zKP" firstAttribute="leading" secondItem="fAe-ff-iA3" secondAttribute="trailing" constant="8" symbolic="YES" id="JxP-P3-9lB"/>
+                <constraint firstAttribute="trailing" secondItem="WS5-Cx-zKP" secondAttribute="trailing" id="KLq-jp-W8U"/>
+                <constraint firstItem="fAe-ff-iA3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hur-PX-njZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="AhC-sy-z0q" id="PNK-v7-kNI"/>
+                <outlet property="headImageView" destination="fAe-ff-iA3" id="5UX-de-KwB"/>
+                <outlet property="imageView" destination="fAe-ff-iA3" id="5WY-za-4N0"/>
+                <outlet property="publishDateLabel" destination="WS5-Cx-zKP" id="cH5-kZ-ton"/>
+                <outlet property="titleLabel" destination="T0y-Jt-CYH" id="1vq-ib-TsC"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="-208"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="not" width="128" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

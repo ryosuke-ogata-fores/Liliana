@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */; };
 		F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */; };
-		F9575EE419FFE0FB003E69EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE319FFE0FB003E69EA /* ViewController.swift */; };
+		F9575EE419FFE0FB003E69EA /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE319FFE0FB003E69EA /* TopViewController.swift */; };
 		F9575EE719FFE0FB003E69EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9575EE519FFE0FB003E69EA /* Main.storyboard */; };
 		F9575EE919FFE0FB003E69EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9575EE819FFE0FB003E69EA /* Images.xcassets */; };
 		F9575EEC19FFE0FB003E69EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9575EEA19FFE0FB003E69EA /* LaunchScreen.xib */; };
 		F9575EF819FFE0FB003E69EA /* LilianaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EF719FFE0FB003E69EA /* LilianaTests.swift */; };
+		F9CC14E71A01366800B238A5 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CC14E51A01366800B238A5 /* ArticleCell.xib */; };
+		F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC14E61A01366800B238A5 /* MyTableViewController.swift */; };
+		F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC14E91A01368C00B238A5 /* ArticleCell.swift */; };
+		F9CC14EC1A01396500B238A5 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC14EB1A01396500B238A5 /* ArticleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		F9575EDD19FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9575EE119FFE0FB003E69EA /* Liliana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Liliana.xcdatamodel; sourceTree = "<group>"; };
-		F9575EE319FFE0FB003E69EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9575EE319FFE0FB003E69EA /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		F9575EE619FFE0FB003E69EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9575EE819FFE0FB003E69EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F9575EEB19FFE0FB003E69EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F9575EF119FFE0FB003E69EA /* LilianaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilianaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EF619FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9575EF719FFE0FB003E69EA /* LilianaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilianaTests.swift; sourceTree = "<group>"; };
+		F9CC14E51A01366800B238A5 /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		F9CC14E61A01366800B238A5 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		F9CC14E91A01368C00B238A5 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		F9CC14EB1A01396500B238A5 /* ArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +87,9 @@
 		F9575EDB19FFE0FB003E69EA /* Liliana */ = {
 			isa = PBXGroup;
 			children = (
+				F9CC14E31A01366800B238A5 /* Scenes */,
 				F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */,
-				F9575EE319FFE0FB003E69EA /* ViewController.swift */,
+				F9575EE319FFE0FB003E69EA /* TopViewController.swift */,
 				F9575EE519FFE0FB003E69EA /* Main.storyboard */,
 				F9575EE819FFE0FB003E69EA /* Images.xcassets */,
 				F9575EEA19FFE0FB003E69EA /* LaunchScreen.xib */,
@@ -113,6 +122,25 @@
 				F9575EF619FFE0FB003E69EA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9CC14E31A01366800B238A5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC14E41A01366800B238A5 /* TableView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F9CC14E41A01366800B238A5 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC14E61A01366800B238A5 /* MyTableViewController.swift */,
+				F9CC14E51A01366800B238A5 /* ArticleCell.xib */,
+				F9CC14E91A01368C00B238A5 /* ArticleCell.swift */,
+				F9CC14EB1A01396500B238A5 /* ArticleModel.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CC14E71A01366800B238A5 /* ArticleCell.xib in Resources */,
 				F9575EE719FFE0FB003E69EA /* Main.storyboard in Resources */,
 				F9575EEC19FFE0FB003E69EA /* LaunchScreen.xib in Resources */,
 				F9575EE919FFE0FB003E69EA /* Images.xcassets in Resources */,
@@ -215,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9575EE419FFE0FB003E69EA /* ViewController.swift in Sources */,
+				F9575EE419FFE0FB003E69EA /* TopViewController.swift in Sources */,
 				F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */,
 				F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */,
+				F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */,
+				F9CC14EC1A01396500B238A5 /* ArticleModel.swift in Sources */,
+				F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -341,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Liliana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Liliana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +443,7 @@
 				F9575EFD19FFE0FB003E69EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9575EFE19FFE0FB003E69EA /* Build configuration list for PBXNativeTarget "LilianaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +452,7 @@
 				F9575F0019FFE0FB003E69EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

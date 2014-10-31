@@ -3,7 +3,7 @@
 //  Liliana
 //
 //  Created by rogata on 2014/10/28.
-//  Copyright (c) 2014年 rogata. All rights reserved.
+//  Copyright (c) 2014 rogata. All rights reserved.
 //
 
 import UIKit
