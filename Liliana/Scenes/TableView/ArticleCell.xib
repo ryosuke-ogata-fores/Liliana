@@ -15,23 +15,29 @@
                     <rect key="frame" x="0.0" y="7" width="74" height="74"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="74" id="vw7-9S-4tO"/>
+                        <constraint firstAttribute="width" constant="74" id="g9j-vy-xW0"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0y-Jt-CYH">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0y-Jt-CYH">
                     <rect key="frame" x="85" y="4" width="235" height="20"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS5-Cx-zKP">
-                    <rect key="frame" x="82" y="71" width="238" height="15"/>
+                    <rect key="frame" x="225" y="71" width="90" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="8Bu-n5-dnL"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="contentLabel" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-sy-z0q">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contentLabel" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-sy-z0q">
                     <rect key="frame" x="85" y="23" width="235" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="jra-Ap-7je"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -39,12 +45,17 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="fAe-ff-iA3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="0VH-Sk-jmr"/>
-                <constraint firstAttribute="bottom" secondItem="WS5-Cx-zKP" secondAttribute="bottom" constant="2" id="2m1-m0-dCg"/>
-                <constraint firstAttribute="centerY" secondItem="fAe-ff-iA3" secondAttribute="centerY" id="7dx-Sa-Sr2"/>
-                <constraint firstItem="WS5-Cx-zKP" firstAttribute="leading" secondItem="fAe-ff-iA3" secondAttribute="trailing" constant="8" symbolic="YES" id="JxP-P3-9lB"/>
-                <constraint firstAttribute="trailing" secondItem="WS5-Cx-zKP" secondAttribute="trailing" id="KLq-jp-W8U"/>
-                <constraint firstItem="fAe-ff-iA3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hur-PX-njZ"/>
+                <constraint firstItem="T0y-Jt-CYH" firstAttribute="leading" secondItem="fAe-ff-iA3" secondAttribute="trailing" constant="11" id="Eus-Zm-ohh"/>
+                <constraint firstItem="fAe-ff-iA3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GG0-Iv-rIq"/>
+                <constraint firstAttribute="trailing" secondItem="T0y-Jt-CYH" secondAttribute="trailing" id="MId-Wu-RYr"/>
+                <constraint firstItem="T0y-Jt-CYH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="PGV-C0-hOk"/>
+                <constraint firstItem="AhC-sy-z0q" firstAttribute="top" secondItem="T0y-Jt-CYH" secondAttribute="top" constant="19" id="UDn-4A-L2D"/>
+                <constraint firstAttribute="trailing" secondItem="WS5-Cx-zKP" secondAttribute="trailing" constant="5" id="fO8-uR-JmU"/>
+                <constraint firstItem="fAe-ff-iA3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="fjb-8W-muA"/>
+                <constraint firstItem="AhC-sy-z0q" firstAttribute="leading" secondItem="fAe-ff-iA3" secondAttribute="trailing" constant="11" id="hBh-RZ-luY"/>
+                <constraint firstAttribute="bottom" secondItem="WS5-Cx-zKP" secondAttribute="bottom" constant="2" id="oZX-kh-Agi"/>
+                <constraint firstAttribute="bottom" secondItem="fAe-ff-iA3" secondAttribute="bottom" constant="7" id="uKF-iZ-Ydb"/>
+                <constraint firstAttribute="trailing" secondItem="AhC-sy-z0q" secondAttribute="trailing" id="wjE-hv-fPj"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

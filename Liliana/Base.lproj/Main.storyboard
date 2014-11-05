@@ -15,11 +15,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHg-Cd-uGI">
-                                <rect key="frame" x="118" y="87" width="84" height="30"/>
+                                <rect key="frame" x="165" y="112" width="84" height="30"/>
                                 <state key="normal" title="UITableView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -29,115 +29,79 @@
                                     <segue destination="buZ-uV-p4D" kind="show" id="T0i-DA-pTf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JT-XS-MfP">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="UICollectionView">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchDownButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="Dar-gx-b3l"/>
-                                    <action selector="touchUpInsideButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sY2-r9-VUM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1Cb-F4-8Dm"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="If6-Tb-t8A"/>
-                            <constraint firstItem="1JT-XS-MfP" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="top" constant="64" id="WRQ-cc-XRq"/>
-                            <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="23" id="YQR-0F-Ukn"/>
-                            <constraint firstAttribute="centerX" secondItem="1JT-XS-MfP" secondAttribute="centerX" id="fpv-l2-6Pq"/>
+                            <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="YQR-0F-Ukn"/>
                             <constraint firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="uR6-DW-6X9"/>
                         </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="1JT-XS-MfP"/>
-                            </mask>
                             <mask key="constraints">
-                                <exclude reference="WRQ-cc-XRq"/>
-                                <exclude reference="fpv-l2-6Pq"/>
-                                <exclude reference="If6-Tb-t8A"/>
-                                <exclude reference="uR6-DW-6X9"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="1JT-XS-MfP"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="WRQ-cc-XRq"/>
-                                <include reference="fpv-l2-6Pq"/>
-                                <include reference="If6-Tb-t8A"/>
-                                <include reference="uR6-DW-6X9"/>
+                                <exclude reference="YQR-0F-Ukn"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Cfo-tV-nJ8"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="collectionViewButton" destination="1JT-XS-MfP" id="dSl-y7-LL2"/>
                         <outlet property="tableViewButton" destination="ZHg-Cd-uGI" id="sG8-o3-030"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="342.75"/>
+            <point key="canvasLocation" x="1152" y="342.74999999999994"/>
         </scene>
         <!--My Table View Controller-->
         <scene sceneID="tH1-iK-kPq">
             <objects>
-                <viewController id="buZ-uV-p4D" customClass="MyTableViewController" customModule="Liliana" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="buZ-uV-p4D" customClass="MyTableViewController" customModule="Liliana" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0yz-TW-YPd"/>
                         <viewControllerLayoutGuide type="bottom" id="YYP-Ow-he7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gVB-8L-fn2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ma3-qC-2Z9">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SH3-Vw-BiC">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                </variation>
                                 <connections>
-                                    <outlet property="dataSource" destination="buZ-uV-p4D" id="YzG-cy-cAH"/>
-                                    <outlet property="delegate" destination="buZ-uV-p4D" id="4Eh-QP-auB"/>
+                                    <outlet property="dataSource" destination="buZ-uV-p4D" id="lEs-na-kWp"/>
+                                    <outlet property="delegate" destination="buZ-uV-p4D" id="tbB-Om-g2R"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ma3-qC-2Z9" firstAttribute="top" secondItem="0yz-TW-YPd" secondAttribute="bottom" constant="-20" id="De0-kS-dDV"/>
-                            <constraint firstItem="Ma3-qC-2Z9" firstAttribute="leading" secondItem="gVB-8L-fn2" secondAttribute="leadingMargin" constant="-16" id="QXL-SA-32R"/>
-                            <constraint firstItem="YYP-Ow-he7" firstAttribute="top" secondItem="Ma3-qC-2Z9" secondAttribute="bottom" id="chG-HQ-BJx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ma3-qC-2Z9" secondAttribute="trailing" constant="-16" id="xx7-pn-ReN"/>
+                            <constraint firstItem="SH3-Vw-BiC" firstAttribute="top" secondItem="0yz-TW-YPd" secondAttribute="bottom" id="MEW-IM-Ko6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SH3-Vw-BiC" secondAttribute="trailing" constant="-16" id="PNm-ks-ONU"/>
+                            <constraint firstItem="YYP-Ow-he7" firstAttribute="top" secondItem="SH3-Vw-BiC" secondAttribute="bottom" id="Qj3-IS-izu"/>
+                            <constraint firstItem="SH3-Vw-BiC" firstAttribute="leading" secondItem="gVB-8L-fn2" secondAttribute="leadingMargin" constant="-16" id="sgO-0G-PvS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QJZ-bJ-Dx0"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="tableView" destination="Ma3-qC-2Z9" id="JsO-df-xRW"/>
+                        <outlet property="tableView" destination="SH3-Vw-BiC" id="1YG-jA-ypC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="467-TL-a9c" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592" y="342"/>
+            <point key="canvasLocation" x="1696" y="341.99999999999994"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YUN-Hd-xXK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wyc-uN-ncE" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FBB-f9-ZUb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -149,7 +113,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lS-NJ-O1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="342.75"/>
+            <point key="canvasLocation" x="629" y="342.74999999999994"/>
         </scene>
     </scenes>
 </document>
