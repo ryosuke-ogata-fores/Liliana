@@ -29,12 +29,23 @@
                                     <segue destination="buZ-uV-p4D" kind="show" id="T0i-DA-pTf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8W4-Ok-ZDu">
+                                <rect key="frame" x="142" y="166" width="131" height="30"/>
+                                <state key="normal" title="GestureRecognizer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ku4-tQ-69O" kind="show" id="rxy-uR-gLc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1Cb-F4-8Dm"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="If6-Tb-t8A"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="YQR-0F-Ukn"/>
+                            <constraint firstItem="8W4-Ok-ZDu" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="hXy-Mx-qcv"/>
+                            <constraint firstAttribute="centerX" secondItem="8W4-Ok-ZDu" secondAttribute="centerX" id="kak-xc-I8W"/>
                             <constraint firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="uR6-DW-6X9"/>
                         </constraints>
                         <variation key="default">
@@ -114,6 +125,117 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lS-NJ-O1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="629" y="342.74999999999994"/>
+        </scene>
+        <!--Gesture Recognizer View Controller-->
+        <scene sceneID="o08-bt-sFn">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ku4-tQ-69O" customClass="GestureRecognizerViewController" customModule="Liliana" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOx-aA-6yK"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ln-XT-Xf7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Riv-Fu-5nQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kuk-c6-bE1">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="so6-x6-0wL">
+                                        <rect key="frame" x="16" y="16" width="128" height="128"/>
+                                        <color key="backgroundColor" red="0.0" green="0.35686275362968445" blue="0.21176472306251526" alpha="1" colorSpace="deviceRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="75t-tN-m6R"/>
+                                            <constraint firstAttribute="width" constant="128" id="Vrb-9X-fgP"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="IIE-Nh-FND" appends="YES" id="hBr-sL-1d6"/>
+                                            <outletCollection property="gestureRecognizers" destination="itv-1c-NNG" appends="YES" id="ARM-Ig-xEF"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWy-AQ-rkm">
+                                        <rect key="frame" x="56" y="145" width="48" height="320"/>
+                                        <color key="backgroundColor" red="0.34509804844856262" green="0.21568629145622253" blue="0.18039216101169586" alpha="1" colorSpace="deviceRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="320" id="IDJ-h0-AkX"/>
+                                            <constraint firstAttribute="width" constant="48" id="uvh-It-XrL"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="eDP-Bq-mcN" appends="YES" id="yIA-zu-9D6"/>
+                                            <outletCollection property="gestureRecognizers" destination="hv9-GZ-9tD" appends="YES" id="bcV-DL-Pv5"/>
+                                            <outletCollection property="gestureRecognizers" destination="F1R-ww-2gE" appends="YES" id="e83-zP-jvE"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79607850313186646" green="0.89019614458084106" blue="0.34117648005485535" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dWy-AQ-rkm" firstAttribute="top" secondItem="so6-x6-0wL" secondAttribute="bottom" constant="1" id="3rG-Lz-ecz"/>
+                                    <constraint firstItem="dWy-AQ-rkm" firstAttribute="leading" secondItem="kuk-c6-bE1" secondAttribute="leading" constant="56" id="D6t-kk-57y"/>
+                                    <constraint firstAttribute="bottom" secondItem="so6-x6-0wL" secondAttribute="bottom" constant="528" id="IRz-3z-Zwe"/>
+                                    <constraint firstAttribute="trailing" secondItem="so6-x6-0wL" secondAttribute="trailing" constant="270" id="Qxg-9G-rFF"/>
+                                    <constraint firstItem="so6-x6-0wL" firstAttribute="leading" secondItem="kuk-c6-bE1" secondAttribute="leading" constant="16" id="a9i-wd-JwY"/>
+                                    <constraint firstItem="so6-x6-0wL" firstAttribute="top" secondItem="kuk-c6-bE1" secondAttribute="top" constant="16" id="x2a-Hh-aiq"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IRz-3z-Zwe"/>
+                                        <exclude reference="Qxg-9G-rFF"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kuk-c6-bE1" secondAttribute="trailing" id="2bY-x4-hGG"/>
+                            <constraint firstItem="kuk-c6-bE1" firstAttribute="top" secondItem="AOx-aA-6yK" secondAttribute="bottom" id="A3J-n5-nzg"/>
+                            <constraint firstItem="kuk-c6-bE1" firstAttribute="leading" secondItem="Riv-Fu-5nQ" secondAttribute="leading" id="HP7-7R-LST"/>
+                            <constraint firstItem="kuk-c6-bE1" firstAttribute="bottom" secondItem="7Ln-XT-Xf7" secondAttribute="top" id="OYP-LX-5xl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="psS-ss-Cj3"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="barView" destination="dWy-AQ-rkm" id="ngN-ug-LNi"/>
+                        <outlet property="bgView" destination="kuk-c6-bE1" id="lh1-w8-IO5"/>
+                        <outlet property="circleView" destination="so6-x6-0wL" id="U1T-El-vLE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nok-Gu-W3v" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="IIE-Nh-FND" userLabel="circleView Pinch Gesture Recognizer">
+                    <connections>
+                        <action selector="handlePinch:" destination="Ku4-tQ-69O" id="j3K-XV-LeZ"/>
+                        <outlet property="delegate" destination="Ku4-tQ-69O" id="x84-oZ-8Aa"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="itv-1c-NNG" userLabel="circleView Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="handlePan:" destination="Ku4-tQ-69O" id="jiE-5n-TdC"/>
+                        <outlet property="delegate" destination="Ku4-tQ-69O" id="lnX-ur-Rq6"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="eDP-Bq-mcN" userLabel="barView Rotation Gesture Recognizer">
+                    <connections>
+                        <action selector="handleRotation:" destination="Ku4-tQ-69O" id="6hM-MR-XwU"/>
+                        <outlet property="delegate" destination="Ku4-tQ-69O" id="Ap2-2B-wc9"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="hv9-GZ-9tD" userLabel="barView Pinch Gesture Recognizer">
+                    <connections>
+                        <action selector="handlePinch:" destination="Ku4-tQ-69O" id="Bpp-PD-PuW"/>
+                        <outlet property="delegate" destination="Ku4-tQ-69O" id="TRK-F2-cRJ"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="F1R-ww-2gE" userLabel="barView Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="handlePan:" destination="Ku4-tQ-69O" id="ahe-2d-dVt"/>
+                        <outlet property="delegate" destination="Ku4-tQ-69O" id="uLZ-Cx-IB7"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1696" y="1161"/>
         </scene>
     </scenes>
 </document>

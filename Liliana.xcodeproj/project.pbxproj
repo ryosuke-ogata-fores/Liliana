@@ -15,6 +15,7 @@
 		F9575EE919FFE0FB003E69EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9575EE819FFE0FB003E69EA /* Images.xcassets */; };
 		F9575EEC19FFE0FB003E69EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9575EEA19FFE0FB003E69EA /* LaunchScreen.xib */; };
 		F9575EF819FFE0FB003E69EA /* LilianaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EF719FFE0FB003E69EA /* LilianaTests.swift */; };
+		F976DA6D1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F976DA6C1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift */; };
 		F9CC14E71A01366800B238A5 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CC14E51A01366800B238A5 /* ArticleCell.xib */; };
 		F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC14E61A01366800B238A5 /* MyTableViewController.swift */; };
 		F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC14E91A01368C00B238A5 /* ArticleCell.swift */; };
@@ -44,6 +45,7 @@
 		F9575EF119FFE0FB003E69EA /* LilianaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilianaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EF619FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9575EF719FFE0FB003E69EA /* LilianaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilianaTests.swift; sourceTree = "<group>"; };
+		F976DA6C1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizerViewController.swift; sourceTree = "<group>"; };
 		F9CC14E51A01366800B238A5 /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		F9CC14E61A01366800B238A5 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		F9CC14E91A01368C00B238A5 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
@@ -126,10 +128,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F976DA6B1A0A72D200D8BA2C /* GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				F976DA6C1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift */,
+			);
+			path = GestureRecognizer;
+			sourceTree = "<group>";
+		};
 		F9CC14E31A01366800B238A5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				F9CC14E41A01366800B238A5 /* TableView */,
+				F976DA6B1A0A72D200D8BA2C /* GestureRecognizer */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -254,6 +265,7 @@
 				F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */,
 				F9CC14EC1A01396500B238A5 /* ArticleModel.swift in Sources */,
 				F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */,
+				F976DA6D1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift in Sources */,
 				EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
