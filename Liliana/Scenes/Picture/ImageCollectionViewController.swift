@@ -37,8 +37,10 @@ class ImageCollectionViewController : UICollectionViewController, UICollectionVi
         var myCell : ImageCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as ImageCollectionViewCell
         
         // Cellに画像をセットする
-        let img:UIImage = UIImage(named:"yukikotan.jpg")!
-        myCell.imageView.image = img
+        myCell.imageView.image = UIImage(named:"yukikotan")
+        
+        // Cellの背景色を変える
+        myCell.backgroundColor = UIColor.whiteColor()
         
         return myCell
     }
