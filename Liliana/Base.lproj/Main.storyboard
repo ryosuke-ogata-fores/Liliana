@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHg-Cd-uGI">
-                                <rect key="frame" x="165" y="112" width="84" height="30"/>
+                                <rect key="frame" x="165" y="88" width="84" height="30"/>
                                 <state key="normal" title="UITableView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -30,58 +30,67 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrj-2p-EQg">
-                                <rect key="frame" x="185" y="166" width="45" height="30"/>
-                                <state key="normal" title="カメラ">
+                                <rect key="frame" x="180" y="142" width="54" height="30"/>
+                                <state key="normal" title="Camera">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="touchDownButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="AhR-zh-Bta"/>
+                                    <action selector="touchUpInsideButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E8o-Sn-Wq7"/>
                                     <segue destination="uHp-V9-xda" kind="show" id="YOY-yQ-1cD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-Ws-dMA">
-                                <rect key="frame" x="122" y="220" width="170" height="30"/>
-                                <state key="normal" title="UICollectionView(画像版)">
+                                <rect key="frame" x="149" y="196" width="116" height="30"/>
+                                <state key="normal" title="UICollectionView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="touchDownButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="vsr-qn-zLj"/>
+                                    <action selector="touchUpInsideButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="C7k-X6-kom"/>
                                     <segue destination="GF9-er-g7P" kind="show" id="Y8B-0R-NeH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-Ts-eub">
-                                <rect key="frame" x="142" y="274" width="131" height="30"/>
+                                <rect key="frame" x="141" y="250" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="szn-3l-TzA"/>
+                                </constraints>
                                 <state key="normal" title="GestureRecognizer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="touchDownButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="ok0-yz-cda"/>
+                                    <action selector="touchUpInsideButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qqb-Y4-x7Y"/>
                                     <segue destination="Ku4-tQ-69O" kind="show" id="r1l-9h-vpK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZHg-Cd-uGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1Cb-F4-8Dm"/>
-                            <constraint firstAttribute="centerX" secondItem="rVX-Ts-eub" secondAttribute="centerX" id="79d-eh-fOB"/>
-                            <constraint firstItem="mrj-2p-EQg" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="EmX-9e-HSV"/>
-                            <constraint firstItem="rVX-Ts-eub" firstAttribute="top" secondItem="hTk-Ws-dMA" secondAttribute="bottom" constant="24" id="FDb-wQ-TlR"/>
-                            <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="If6-Tb-t8A"/>
+                            <constraint firstItem="mrj-2p-EQg" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="24x-Fc-oLP"/>
+                            <constraint firstItem="rVX-Ts-eub" firstAttribute="top" secondItem="hTk-Ws-dMA" secondAttribute="bottom" constant="24" id="3zU-L2-1jy"/>
+                            <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="JaD-nN-rbV"/>
+                            <constraint firstItem="hTk-Ws-dMA" firstAttribute="centerX" secondItem="mrj-2p-EQg" secondAttribute="centerX" id="La6-ve-PDT"/>
+                            <constraint firstItem="mrj-2p-EQg" firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="LhK-Bb-VYj"/>
+                            <constraint firstItem="mrj-2p-EQg" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="QAF-b9-bdf"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="YQR-0F-Ukn"/>
-                            <constraint firstItem="hTk-Ws-dMA" firstAttribute="top" secondItem="mrj-2p-EQg" secondAttribute="bottom" constant="24" id="fOK-jF-ftg"/>
-                            <constraint firstAttribute="centerX" secondItem="hTk-Ws-dMA" secondAttribute="centerX" id="kRa-FT-83k"/>
-                            <constraint firstAttribute="centerX" secondItem="mrj-2p-EQg" secondAttribute="centerX" id="qFi-Hc-b3J"/>
+                            <constraint firstItem="hTk-Ws-dMA" firstAttribute="top" secondItem="mrj-2p-EQg" secondAttribute="bottom" constant="24" id="cFV-lF-56o"/>
+                            <constraint firstItem="ZHg-Cd-uGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="eq1-Cu-FZ1"/>
                             <constraint firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="uR6-DW-6X9"/>
+                            <constraint firstItem="hTk-Ws-dMA" firstAttribute="centerX" secondItem="rVX-Ts-eub" secondAttribute="centerX" id="yVV-Eu-wE4"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="YQR-0F-Ukn"/>
+                                <exclude reference="uR6-DW-6X9"/>
+                                <exclude reference="24x-Fc-oLP"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Cfo-tV-nJ8"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="tableViewButton" destination="ZHg-Cd-uGI" id="sG8-o3-030"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,10 +10,6 @@ import UIKit
 
 class TopViewController: UIViewController {
     
-    @IBOutlet var tableViewButton:UIButton!
-    
-    @IBOutlet var collectionViewButton:UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
