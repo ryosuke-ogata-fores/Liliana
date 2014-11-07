@@ -29,8 +29,8 @@
                                     <segue destination="buZ-uV-p4D" kind="show" id="T0i-DA-pTf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrj-2p-EQg">
-                                <rect key="frame" x="185" y="157" width="45" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrj-2p-EQg">
+                                <rect key="frame" x="185" y="166" width="45" height="30"/>
                                 <state key="normal" title="カメラ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -38,8 +38,8 @@
                                     <segue destination="uHp-V9-xda" kind="show" id="YOY-yQ-1cD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-Sh-8ub">
-                                <rect key="frame" x="114" y="202" width="187" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-Sh-8ub">
+                                <rect key="frame" x="114" y="220" width="187" height="30"/>
                                 <state key="normal" title="UICollectionView(Simple版)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,8 +47,8 @@
                                     <segue destination="LYd-7e-HoA" kind="show" id="nWF-1S-m9b"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-Ws-dMA">
-                                <rect key="frame" x="122" y="249" width="170" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-Ws-dMA">
+                                <rect key="frame" x="122" y="275" width="170" height="30"/>
                                 <state key="normal" title="UICollectionView(画像版)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -60,8 +60,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1Cb-F4-8Dm"/>
+                            <constraint firstItem="mrj-2p-EQg" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="EmX-9e-HSV"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="If6-Tb-t8A"/>
+                            <constraint firstItem="oA3-Sh-8ub" firstAttribute="top" secondItem="mrj-2p-EQg" secondAttribute="bottom" constant="24" id="Ji1-nf-GM1"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="YQR-0F-Ukn"/>
+                            <constraint firstItem="hTk-Ws-dMA" firstAttribute="top" secondItem="oA3-Sh-8ub" secondAttribute="bottom" constant="25" id="fPh-ee-pnt"/>
+                            <constraint firstAttribute="centerX" secondItem="oA3-Sh-8ub" secondAttribute="centerX" id="hzR-8Q-ii8"/>
+                            <constraint firstAttribute="centerX" secondItem="hTk-Ws-dMA" secondAttribute="centerX" id="kRa-FT-83k"/>
+                            <constraint firstAttribute="centerX" secondItem="mrj-2p-EQg" secondAttribute="centerX" id="qFi-Hc-b3J"/>
                             <constraint firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="uR6-DW-6X9"/>
                         </constraints>
                         <variation key="default">
@@ -177,8 +183,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yukikotan.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XNW-OQ-uqq">
-                                <rect key="frame" x="0.0" y="64" width="414" height="736"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yukikotan" translatesAutoresizingMaskIntoConstraints="NO" id="XNW-OQ-uqq">
+                                <rect key="frame" x="-1" y="65" width="414" height="598"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -187,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXF-cc-0PN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2085" y="1323"/>
+            <point key="canvasLocation" x="2121" y="1337"/>
         </scene>
         <!--Simple Collection View Controller-->
         <scene sceneID="YL2-mk-4PJ">
@@ -266,6 +272,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="yukikotan.jpg" width="207" height="300"/>
+        <image name="yukikotan" width="138" height="200"/>
     </resources>
 </document>
