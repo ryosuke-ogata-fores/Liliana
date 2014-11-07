@@ -15,7 +15,7 @@ import Foundation
 class SimpleCollectionViewController : UICollectionViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     // 参考サイト@Objective-c
-    // http://dev.classmethod.jp/smartphone/iphone/ios6-uicollectionview/
+    // ttp://dev.classmethod.jp/smartphone/iphone/ios6-uicollectionview/
     
     override func viewDidLoad() {
         super.viewDidLoad()

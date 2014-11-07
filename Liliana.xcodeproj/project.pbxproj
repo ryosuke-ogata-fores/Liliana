@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D955E0211A0B0B5600C0EA5E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955E0201A0B0B5600C0EA5E /* CameraViewController.swift */; };
-		D955E0231A0B0E7000C0EA5E /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955E0221A0B0E7000C0EA5E /* SimpleCollectionViewController.swift */; };
-		D955E0251A0B0E7900C0EA5E /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955E0241A0B0E7900C0EA5E /* ImageCollectionViewController.swift */; };
-		D955E0271A0B0E8000C0EA5E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955E0261A0B0E8000C0EA5E /* ImageCollectionViewCell.swift */; };
-		D955E0291A0B0E8A00C0EA5E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955E0281A0B0E8A00C0EA5E /* ImageView.swift */; };
-		D955E02B1A0B0E9500C0EA5E /* yukikotan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D955E02A1A0B0E9500C0EA5E /* yukikotan.jpg */; };
+		D9F30C131A0C89DA00C9C323 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C0D1A0C89DA00C9C323 /* CameraViewController.swift */; };
+		D9F30C141A0C89DA00C9C323 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */; };
+		D9F30C151A0C89DA00C9C323 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */; };
+		D9F30C161A0C89DA00C9C323 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C101A0C89DA00C9C323 /* ImageView.swift */; };
+		D9F30C171A0C89DA00C9C323 /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C111A0C89DA00C9C323 /* SimpleCollectionViewController.swift */; };
+		D9F30C1C1A0C8D3800C9C323 /* yukikotan@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9F30C1B1A0C8D3800C9C323 /* yukikotan@2x.jpg */; };
 		EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */; };
 		F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */; };
 		F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */; };
@@ -38,12 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D955E0201A0B0B5600C0EA5E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		D955E0221A0B0E7000C0EA5E /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
-		D955E0241A0B0E7900C0EA5E /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
-		D955E0261A0B0E8000C0EA5E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		D955E0281A0B0E8A00C0EA5E /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		D955E02A1A0B0E9500C0EA5E /* yukikotan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yukikotan.jpg; sourceTree = "<group>"; };
+		D9F30C0D1A0C89DA00C9C323 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		D9F30C101A0C89DA00C9C323 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		D9F30C111A0C89DA00C9C323 /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
+		D9F30C1B1A0C8D3800C9C323 /* yukikotan@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yukikotan@2x.jpg"; sourceTree = "<group>"; };
 		EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Loader.swift"; sourceTree = "<group>"; };
 		F9575ED919FFE0FB003E69EA /* Liliana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liliana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EDD19FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +80,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9F30C0C1A0C89DA00C9C323 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				D9F30C1B1A0C8D3800C9C323 /* yukikotan@2x.jpg */,
+				D9F30C0D1A0C89DA00C9C323 /* CameraViewController.swift */,
+				D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */,
+				D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */,
+				D9F30C101A0C89DA00C9C323 /* ImageView.swift */,
+				D9F30C111A0C89DA00C9C323 /* SimpleCollectionViewController.swift */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
 		F9575ED019FFE0FB003E69EA = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +116,7 @@
 			children = (
 				F9CC14E31A01366800B238A5 /* Scenes */,
 				F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */,
-				D955E02A1A0B0E9500C0EA5E /* yukikotan.jpg */,
 				F9575EE319FFE0FB003E69EA /* TopViewController.swift */,
-				D955E0201A0B0B5600C0EA5E /* CameraViewController.swift */,
-				D955E0221A0B0E7000C0EA5E /* SimpleCollectionViewController.swift */,
-				D955E0241A0B0E7900C0EA5E /* ImageCollectionViewController.swift */,
-				D955E0261A0B0E8000C0EA5E /* ImageCollectionViewCell.swift */,
-				D955E0281A0B0E8A00C0EA5E /* ImageView.swift */,
 				F9575EE519FFE0FB003E69EA /* Main.storyboard */,
 				F9575EE819FFE0FB003E69EA /* Images.xcassets */,
 				F9575EEA19FFE0FB003E69EA /* LaunchScreen.xib */,
@@ -148,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				F9CC14E41A01366800B238A5 /* TableView */,
+				D9F30C0C1A0C89DA00C9C323 /* Picture */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -245,10 +253,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F30C1C1A0C8D3800C9C323 /* yukikotan@2x.jpg in Resources */,
 				F9CC14E71A01366800B238A5 /* ArticleCell.xib in Resources */,
 				F9575EE719FFE0FB003E69EA /* Main.storyboard in Resources */,
 				F9575EEC19FFE0FB003E69EA /* LaunchScreen.xib in Resources */,
-				D955E02B1A0B0E9500C0EA5E /* yukikotan.jpg in Resources */,
 				F9575EE919FFE0FB003E69EA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,16 +275,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D955E0291A0B0E8A00C0EA5E /* ImageView.swift in Sources */,
-				D955E0251A0B0E7900C0EA5E /* ImageCollectionViewController.swift in Sources */,
-				D955E0271A0B0E8000C0EA5E /* ImageCollectionViewCell.swift in Sources */,
+				D9F30C151A0C89DA00C9C323 /* ImageCollectionViewController.swift in Sources */,
 				F9575EE419FFE0FB003E69EA /* TopViewController.swift in Sources */,
 				F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */,
 				F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */,
+				D9F30C171A0C89DA00C9C323 /* SimpleCollectionViewController.swift in Sources */,
+				D9F30C161A0C89DA00C9C323 /* ImageView.swift in Sources */,
 				F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */,
-				D955E0231A0B0E7000C0EA5E /* SimpleCollectionViewController.swift in Sources */,
 				F9CC14EC1A01396500B238A5 /* ArticleModel.swift in Sources */,
-				D955E0211A0B0B5600C0EA5E /* CameraViewController.swift in Sources */,
+				D9F30C131A0C89DA00C9C323 /* CameraViewController.swift in Sources */,
+				D9F30C141A0C89DA00C9C323 /* ImageCollectionViewCell.swift in Sources */,
 				F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */,
 				EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */,
 			);
