@@ -38,17 +38,8 @@
                                     <segue destination="uHp-V9-xda" kind="show" id="YOY-yQ-1cD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-Sh-8ub">
-                                <rect key="frame" x="114" y="220" width="187" height="30"/>
-                                <state key="normal" title="UICollectionView(Simple版)">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="LYd-7e-HoA" kind="show" id="nWF-1S-m9b"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-Ws-dMA">
-                                <rect key="frame" x="122" y="275" width="170" height="30"/>
+                                <rect key="frame" x="122" y="220" width="170" height="30"/>
                                 <state key="normal" title="UICollectionView(画像版)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -62,10 +53,8 @@
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1Cb-F4-8Dm"/>
                             <constraint firstItem="mrj-2p-EQg" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="EmX-9e-HSV"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="If6-Tb-t8A"/>
-                            <constraint firstItem="oA3-Sh-8ub" firstAttribute="top" secondItem="mrj-2p-EQg" secondAttribute="bottom" constant="24" id="Ji1-nf-GM1"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="YQR-0F-Ukn"/>
-                            <constraint firstItem="hTk-Ws-dMA" firstAttribute="top" secondItem="oA3-Sh-8ub" secondAttribute="bottom" constant="25" id="fPh-ee-pnt"/>
-                            <constraint firstAttribute="centerX" secondItem="oA3-Sh-8ub" secondAttribute="centerX" id="hzR-8Q-ii8"/>
+                            <constraint firstItem="hTk-Ws-dMA" firstAttribute="top" secondItem="mrj-2p-EQg" secondAttribute="bottom" constant="24" id="fOK-jF-ftg"/>
                             <constraint firstAttribute="centerX" secondItem="hTk-Ws-dMA" secondAttribute="centerX" id="kRa-FT-83k"/>
                             <constraint firstAttribute="centerX" secondItem="mrj-2p-EQg" secondAttribute="centerX" id="qFi-Hc-b3J"/>
                             <constraint firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="uR6-DW-6X9"/>
@@ -195,41 +184,6 @@
             </objects>
             <point key="canvasLocation" x="2121" y="1337"/>
         </scene>
-        <!--Simple Collection View Controller-->
-        <scene sceneID="YL2-mk-4PJ">
-            <objects>
-                <collectionViewController id="LYd-7e-HoA" customClass="SimpleCollectionViewController" customModule="Liliana" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="lky-OY-5G9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3ji-K0-06k">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="6Bb-GP-O6W">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="LYd-7e-HoA" id="mHX-Gc-VJg"/>
-                            <outlet property="delegate" destination="LYd-7e-HoA" id="fVS-hC-PaI"/>
-                        </connections>
-                    </collectionView>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NjT-zk-L24" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1153" y="1329"/>
-        </scene>
         <!--Camera View Controller-->
         <scene sceneID="pJx-lk-nBP">
             <objects>
@@ -247,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbz-cc-CR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704" y="1329"/>
+            <point key="canvasLocation" x="1152" y="1329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YUN-Hd-xXK">

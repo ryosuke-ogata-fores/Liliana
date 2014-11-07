@@ -39,6 +39,9 @@ class ImageCollectionViewController : UICollectionViewController, UICollectionVi
         // Cellに画像をセットする
         myCell.imageView.image = UIImage(named:"yukikotan")
         
+        // Cellの背景色を変える
+        myCell.backgroundColor = UIColor.whiteColor()
+        
         return myCell
     }
     

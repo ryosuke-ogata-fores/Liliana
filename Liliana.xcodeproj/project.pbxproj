@@ -11,7 +11,6 @@
 		D9F30C141A0C89DA00C9C323 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */; };
 		D9F30C151A0C89DA00C9C323 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */; };
 		D9F30C161A0C89DA00C9C323 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C101A0C89DA00C9C323 /* ImageView.swift */; };
-		D9F30C171A0C89DA00C9C323 /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C111A0C89DA00C9C323 /* SimpleCollectionViewController.swift */; };
 		EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */; };
 		F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */; };
 		F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */; };
@@ -41,7 +40,6 @@
 		D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		D9F30C101A0C89DA00C9C323 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		D9F30C111A0C89DA00C9C323 /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
 		EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Loader.swift"; sourceTree = "<group>"; };
 		F9575ED919FFE0FB003E69EA /* Liliana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liliana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EDD19FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */,
 				D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */,
 				D9F30C101A0C89DA00C9C323 /* ImageView.swift */,
-				D9F30C111A0C89DA00C9C323 /* SimpleCollectionViewController.swift */,
 			);
 			path = Picture;
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 				F9575EE419FFE0FB003E69EA /* TopViewController.swift in Sources */,
 				F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */,
 				F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */,
-				D9F30C171A0C89DA00C9C323 /* SimpleCollectionViewController.swift in Sources */,
 				D9F30C161A0C89DA00C9C323 /* ImageView.swift in Sources */,
 				F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */,
 				F9CC14EC1A01396500B238A5 /* ArticleModel.swift in Sources */,
