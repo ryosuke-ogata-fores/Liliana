@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0AC2A71A0CA77D000B0B42 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A31A0CA77D000B0B42 /* CameraViewController.swift */; };
+		EF0AC2A81A0CA77D000B0B42 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A41A0CA77D000B0B42 /* ImageCollectionViewCell.swift */; };
+		EF0AC2A91A0CA77D000B0B42 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A51A0CA77D000B0B42 /* ImageCollectionViewController.swift */; };
+		EF0AC2AA1A0CA77D000B0B42 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A61A0CA77D000B0B42 /* ImageView.swift */; };
 		EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */; };
 		F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */; };
 		F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */; };
@@ -33,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF0AC2A31A0CA77D000B0B42 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		EF0AC2A41A0CA77D000B0B42 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF0AC2A51A0CA77D000B0B42 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		EF0AC2A61A0CA77D000B0B42 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Loader.swift"; sourceTree = "<group>"; };
 		F9575ED919FFE0FB003E69EA /* Liliana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liliana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EDD19FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0AC2A21A0CA77D000B0B42 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				EF0AC2A31A0CA77D000B0B42 /* CameraViewController.swift */,
+				EF0AC2A41A0CA77D000B0B42 /* ImageCollectionViewCell.swift */,
+				EF0AC2A51A0CA77D000B0B42 /* ImageCollectionViewController.swift */,
+				EF0AC2A61A0CA77D000B0B42 /* ImageView.swift */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
 		F9575ED019FFE0FB003E69EA = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				F9CC14E41A01366800B238A5 /* TableView */,
+				EF0AC2A21A0CA77D000B0B42 /* Picture */,
 				F976DA6B1A0A72D200D8BA2C /* GestureRecognizer */,
 			);
 			path = Scenes;
@@ -259,14 +279,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0AC2AA1A0CA77D000B0B42 /* ImageView.swift in Sources */,
 				F9575EE419FFE0FB003E69EA /* TopViewController.swift in Sources */,
 				F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */,
 				F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */,
 				F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */,
 				F9CC14EC1A01396500B238A5 /* ArticleModel.swift in Sources */,
+				EF0AC2A91A0CA77D000B0B42 /* ImageCollectionViewController.swift in Sources */,
 				F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */,
+				EF0AC2A81A0CA77D000B0B42 /* ImageCollectionViewCell.swift in Sources */,
 				F976DA6D1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift in Sources */,
 				EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */,
+				EF0AC2A71A0CA77D000B0B42 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

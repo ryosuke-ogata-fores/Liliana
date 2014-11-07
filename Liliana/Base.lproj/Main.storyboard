@@ -29,23 +29,45 @@
                                     <segue destination="buZ-uV-p4D" kind="show" id="T0i-DA-pTf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8W4-Ok-ZDu">
-                                <rect key="frame" x="142" y="166" width="131" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrj-2p-EQg">
+                                <rect key="frame" x="185" y="166" width="45" height="30"/>
+                                <state key="normal" title="カメラ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uHp-V9-xda" kind="show" id="YOY-yQ-1cD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-Ws-dMA">
+                                <rect key="frame" x="122" y="220" width="170" height="30"/>
+                                <state key="normal" title="UICollectionView(画像版)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GF9-er-g7P" kind="show" id="Y8B-0R-NeH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-Ts-eub">
+                                <rect key="frame" x="142" y="274" width="131" height="30"/>
                                 <state key="normal" title="GestureRecognizer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ku4-tQ-69O" kind="show" id="rxy-uR-gLc"/>
+                                    <segue destination="Ku4-tQ-69O" kind="show" id="r1l-9h-vpK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1Cb-F4-8Dm"/>
+                            <constraint firstAttribute="centerX" secondItem="rVX-Ts-eub" secondAttribute="centerX" id="79d-eh-fOB"/>
+                            <constraint firstItem="mrj-2p-EQg" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="EmX-9e-HSV"/>
+                            <constraint firstItem="rVX-Ts-eub" firstAttribute="top" secondItem="hTk-Ws-dMA" secondAttribute="bottom" constant="24" id="FDb-wQ-TlR"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="If6-Tb-t8A"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="YQR-0F-Ukn"/>
-                            <constraint firstItem="8W4-Ok-ZDu" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="hXy-Mx-qcv"/>
-                            <constraint firstAttribute="centerX" secondItem="8W4-Ok-ZDu" secondAttribute="centerX" id="kak-xc-I8W"/>
+                            <constraint firstItem="hTk-Ws-dMA" firstAttribute="top" secondItem="mrj-2p-EQg" secondAttribute="bottom" constant="24" id="fOK-jF-ftg"/>
+                            <constraint firstAttribute="centerX" secondItem="hTk-Ws-dMA" secondAttribute="centerX" id="kRa-FT-83k"/>
+                            <constraint firstAttribute="centerX" secondItem="mrj-2p-EQg" secondAttribute="centerX" id="qFi-Hc-b3J"/>
                             <constraint firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="uR6-DW-6X9"/>
                         </constraints>
                         <variation key="default">
@@ -103,7 +125,94 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="467-TL-a9c" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696" y="341.99999999999994"/>
+            <point key="canvasLocation" x="1788" y="-1434"/>
+        </scene>
+        <!--Image Collection View Controller-->
+        <scene sceneID="Suy-TU-SLu">
+            <objects>
+                <collectionViewController id="GF9-er-g7P" customClass="ImageCollectionViewController" customModule="Liliana" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jlO-8l-k2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9tX-SU-L4X">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="VsW-rz-pSs" customClass="ImageCollectionViewCell" customModule="Liliana" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uSB-Qt-UN5">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="imageView" destination="uSB-Qt-UN5" id="ddZ-U0-jrc"/>
+                                    <segue destination="bCb-gl-e8L" kind="show" id="9VI-Cw-xzU"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="GF9-er-g7P" id="b7Z-HV-Aje"/>
+                            <outlet property="delegate" destination="GF9-er-g7P" id="PYY-1X-Ro6"/>
+                        </connections>
+                    </collectionView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bP1-0q-gJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="1243"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nVQ-dc-Jqn">
+            <objects>
+                <viewController id="bCb-gl-e8L" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c1L-sY-aA2"/>
+                        <viewControllerLayoutGuide type="bottom" id="cU4-A5-6A0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qIG-5L-txh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yukikotan" translatesAutoresizingMaskIntoConstraints="NO" id="XNW-OQ-uqq">
+                                <rect key="frame" x="-1" y="65" width="414" height="598"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXF-cc-0PN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2325" y="1243"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="pJx-lk-nBP">
+            <objects>
+                <viewController id="uHp-V9-xda" customClass="CameraViewController" customModule="Liliana" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ter-9B-4nn"/>
+                        <viewControllerLayoutGuide type="bottom" id="TdW-Oq-54i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gJ6-ym-7Ar">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbz-cc-CR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="342"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YUN-Hd-xXK">
@@ -235,7 +344,10 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1696" y="1161"/>
+            <point key="canvasLocation" x="1788" y="-590"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="yukikotan" width="138" height="200"/>
+    </resources>
 </document>
