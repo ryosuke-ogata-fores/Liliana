@@ -261,11 +261,21 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="so6-x6-0wL">
                                         <rect key="frame" x="16" y="16" width="128" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="circle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BH-4Y-dW3">
+                                                <rect key="frame" x="43" y="53" width="41" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.35686275362968445" blue="0.21176472306251526" alpha="1" colorSpace="deviceRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="75t-tN-m6R"/>
                                             <constraint firstAttribute="width" constant="128" id="Vrb-9X-fgP"/>
+                                            <constraint firstAttribute="centerX" secondItem="0BH-4Y-dW3" secondAttribute="centerX" id="iDv-iz-PcO"/>
+                                            <constraint firstAttribute="centerY" secondItem="0BH-4Y-dW3" secondAttribute="centerY" id="mJM-Qc-mgf"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="IIE-Nh-FND" appends="YES" id="hBr-sL-1d6"/>
@@ -274,10 +284,20 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWy-AQ-rkm">
                                         <rect key="frame" x="56" y="145" width="48" height="320"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gir-oY-7xG">
+                                                <rect key="frame" x="11" y="150" width="26" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.34509804844856262" green="0.21568629145622253" blue="0.18039216101169586" alpha="1" colorSpace="deviceRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="gir-oY-7xG" secondAttribute="centerX" id="09O-u9-9hu"/>
                                             <constraint firstAttribute="height" constant="320" id="IDJ-h0-AkX"/>
+                                            <constraint firstAttribute="centerY" secondItem="gir-oY-7xG" secondAttribute="centerY" id="XGn-9j-t3I"/>
                                             <constraint firstAttribute="width" constant="48" id="uvh-It-XrL"/>
                                         </constraints>
                                         <connections>

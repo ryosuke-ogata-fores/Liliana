@@ -34,7 +34,7 @@ class GestureRecognizerViewController : UIViewController, UIGestureRecognizerDel
     func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
-
+    
     @IBAction func handlePinch(recognizer : UIPinchGestureRecognizer) {
         var view:UIView = recognizer.view!
         println("scale=\(recognizer.scale), velocity=\(recognizer.velocity)")
@@ -51,20 +51,20 @@ class GestureRecognizerViewController : UIViewController, UIGestureRecognizerDel
         var view:UIView = recognizer.view!
         if (view == self.circleView
             || view == self.barView) {
-            let translation = recognizer.translationInView(self.bgView)
-            println("translation=\(translation.x),\(translation.y) on self.bgView")
-            view.center = CGPoint(
-                x:view.center.x + translation.x,
-                y:view.center.y + translation.y)
-            recognizer.setTranslation(CGPointZero, inView: self.bgView)
+                let translation = recognizer.translationInView(self.bgView)
+                println("translation=\(translation.x),\(translation.y) on self.bgView")
+                view.center = CGPoint(
+                    x:view.center.x + translation.x,
+                    y:view.center.y + translation.y)
+                recognizer.setTranslation(CGPointZero, inView: self.bgView)
         }
     }
     @IBAction func handleRotation(recognizer: UIRotationGestureRecognizer) {
         var view:UIView = recognizer.view!
         if (view == self.barView) {
-                println("rotation=\(recognizer.rotation)")
-                view.transform = CGAffineTransformRotate(view.transform, recognizer.rotation)
-                recognizer.rotation = 0
+            println("rotation=\(recognizer.rotation)")
+            view.transform = CGAffineTransformRotate(view.transform, recognizer.rotation)
+            recognizer.rotation = 0
         }
     }
 }
