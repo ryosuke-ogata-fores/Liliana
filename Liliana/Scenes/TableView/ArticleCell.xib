@@ -73,7 +73,7 @@
         </view>
     </objects>
     <resources>
-        <image name="not" width="128" height="128"/>
+        <image name="not" width="85" height="85"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

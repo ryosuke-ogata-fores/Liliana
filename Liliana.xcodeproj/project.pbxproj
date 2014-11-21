@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9F30C131A0C89DA00C9C323 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C0D1A0C89DA00C9C323 /* CameraViewController.swift */; };
-		D9F30C141A0C89DA00C9C323 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */; };
-		D9F30C151A0C89DA00C9C323 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */; };
-		D9F30C161A0C89DA00C9C323 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F30C101A0C89DA00C9C323 /* ImageView.swift */; };
+		EF0AC2A71A0CA77D000B0B42 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A31A0CA77D000B0B42 /* CameraViewController.swift */; };
+		EF0AC2A81A0CA77D000B0B42 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A41A0CA77D000B0B42 /* ImageCollectionViewCell.swift */; };
+		EF0AC2A91A0CA77D000B0B42 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A51A0CA77D000B0B42 /* ImageCollectionViewController.swift */; };
+		EF0AC2AA1A0CA77D000B0B42 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A61A0CA77D000B0B42 /* ImageView.swift */; };
 		EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */; };
 		F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */; };
 		F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */; };
@@ -19,6 +19,7 @@
 		F9575EE919FFE0FB003E69EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9575EE819FFE0FB003E69EA /* Images.xcassets */; };
 		F9575EEC19FFE0FB003E69EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9575EEA19FFE0FB003E69EA /* LaunchScreen.xib */; };
 		F9575EF819FFE0FB003E69EA /* LilianaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EF719FFE0FB003E69EA /* LilianaTests.swift */; };
+		F976DA6D1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F976DA6C1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift */; };
 		F9CC14E71A01366800B238A5 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CC14E51A01366800B238A5 /* ArticleCell.xib */; };
 		F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC14E61A01366800B238A5 /* MyTableViewController.swift */; };
 		F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC14E91A01368C00B238A5 /* ArticleCell.swift */; };
@@ -36,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D9F30C0D1A0C89DA00C9C323 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
-		D9F30C101A0C89DA00C9C323 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		EF0AC2A31A0CA77D000B0B42 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		EF0AC2A41A0CA77D000B0B42 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF0AC2A51A0CA77D000B0B42 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		EF0AC2A61A0CA77D000B0B42 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Loader.swift"; sourceTree = "<group>"; };
 		F9575ED919FFE0FB003E69EA /* Liliana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liliana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EDD19FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		F9575EF119FFE0FB003E69EA /* LilianaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LilianaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EF619FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9575EF719FFE0FB003E69EA /* LilianaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LilianaTests.swift; sourceTree = "<group>"; };
+		F976DA6C1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizerViewController.swift; sourceTree = "<group>"; };
 		F9CC14E51A01366800B238A5 /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		F9CC14E61A01366800B238A5 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		F9CC14E91A01368C00B238A5 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
@@ -76,13 +78,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D9F30C0C1A0C89DA00C9C323 /* Picture */ = {
+		EF0AC2A21A0CA77D000B0B42 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
-				D9F30C0D1A0C89DA00C9C323 /* CameraViewController.swift */,
-				D9F30C0E1A0C89DA00C9C323 /* ImageCollectionViewCell.swift */,
-				D9F30C0F1A0C89DA00C9C323 /* ImageCollectionViewController.swift */,
-				D9F30C101A0C89DA00C9C323 /* ImageView.swift */,
+				EF0AC2A31A0CA77D000B0B42 /* CameraViewController.swift */,
+				EF0AC2A41A0CA77D000B0B42 /* ImageCollectionViewCell.swift */,
+				EF0AC2A51A0CA77D000B0B42 /* ImageCollectionViewController.swift */,
+				EF0AC2A61A0CA77D000B0B42 /* ImageView.swift */,
 			);
 			path = Picture;
 			sourceTree = "<group>";
@@ -145,11 +147,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F976DA6B1A0A72D200D8BA2C /* GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				F976DA6C1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift */,
+			);
+			path = GestureRecognizer;
+			sourceTree = "<group>";
+		};
 		F9CC14E31A01366800B238A5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				F9CC14E41A01366800B238A5 /* TableView */,
-				D9F30C0C1A0C89DA00C9C323 /* Picture */,
+				EF0AC2A21A0CA77D000B0B42 /* Picture */,
+				F976DA6B1A0A72D200D8BA2C /* GestureRecognizer */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -268,17 +279,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9F30C151A0C89DA00C9C323 /* ImageCollectionViewController.swift in Sources */,
+				EF0AC2AA1A0CA77D000B0B42 /* ImageView.swift in Sources */,
 				F9575EE419FFE0FB003E69EA /* TopViewController.swift in Sources */,
 				F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */,
 				F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */,
-				D9F30C161A0C89DA00C9C323 /* ImageView.swift in Sources */,
 				F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */,
 				F9CC14EC1A01396500B238A5 /* ArticleModel.swift in Sources */,
-				D9F30C131A0C89DA00C9C323 /* CameraViewController.swift in Sources */,
-				D9F30C141A0C89DA00C9C323 /* ImageCollectionViewCell.swift in Sources */,
+				EF0AC2A91A0CA77D000B0B42 /* ImageCollectionViewController.swift in Sources */,
 				F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */,
+				EF0AC2A81A0CA77D000B0B42 /* ImageCollectionViewCell.swift in Sources */,
+				F976DA6D1A0A72FB00D8BA2C /* GestureRecognizerViewController.swift in Sources */,
 				EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */,
+				EF0AC2A71A0CA77D000B0B42 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +412,8 @@
 		F9575EFC19FFE0FB003E69EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Liliana/Info.plist;
@@ -407,13 +421,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F9575EFD19FFE0FB003E69EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Liliana/Info.plist;
@@ -421,7 +436,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
