@@ -213,7 +213,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="hzd-TJ-hrA" appends="YES" id="xxm-ty-N1x"/>
+                                    <outletCollection property="gestureRecognizers" destination="YlG-ql-vxy" appends="YES" id="Tzz-sF-y8J"/>
                                 </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4f-5Q-iEd">
@@ -282,12 +282,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGr-W6-A76" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="hzd-TJ-hrA" userLabel="MapView Tap Gesture Recognizer">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="YlG-ql-vxy" userLabel="MapView Long Press Gesture Recognizer">
                     <connections>
-                        <action selector="didTappedMapView:" destination="4UW-fH-32V" id="bU0-AO-SLs"/>
-                        <outlet property="delegate" destination="4UW-fH-32V" id="uaF-RN-vUf"/>
+                        <action selector="didLongPressedMapView:" destination="4UW-fH-32V" id="tGl-P6-yAn"/>
+                        <outlet property="delegate" destination="4UW-fH-32V" id="6Xr-BE-Ie0"/>
                     </connections>
-                </tapGestureRecognizer>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1788" y="2076"/>
         </scene>

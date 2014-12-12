@@ -15,6 +15,8 @@
 		EFC01C7A1A36F8A700F64AB0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC01C781A36F8A700F64AB0 /* MapViewController.swift */; };
 		EFC01C7D1A36F8C300F64AB0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC01C7C1A36F8C300F64AB0 /* MapKit.framework */; };
 		EFC01C7F1A36F8CD00F64AB0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC01C7E1A36F8CD00F64AB0 /* CoreLocation.framework */; };
+		EFF1CD9D1A3A925B00158177 /* DestinationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF1CD9C1A3A925B00158177 /* DestinationAnnotationView.swift */; };
+		EFF1CD9E1A3A925B00158177 /* DestinationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF1CD9C1A3A925B00158177 /* DestinationAnnotationView.swift */; };
 		EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */; };
 		F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */; };
 		F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */; };
@@ -48,6 +50,7 @@
 		EFC01C781A36F8A700F64AB0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EFC01C7C1A36F8C300F64AB0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EFC01C7E1A36F8CD00F64AB0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EFF1CD9C1A3A925B00158177 /* DestinationAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationAnnotationView.swift; sourceTree = "<group>"; };
 		EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Loader.swift"; sourceTree = "<group>"; };
 		F9575ED919FFE0FB003E69EA /* Liliana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liliana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EDD19FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC01C781A36F8A700F64AB0 /* MapViewController.swift */,
+				EFF1CD9C1A3A925B00158177 /* DestinationAnnotationView.swift */,
 			);
 			path = MapKit;
 			sourceTree = "<group>";
@@ -309,6 +313,7 @@
 			files = (
 				EF0AC2AA1A0CA77D000B0B42 /* ImageView.swift in Sources */,
 				F9575EE419FFE0FB003E69EA /* TopViewController.swift in Sources */,
+				EFF1CD9D1A3A925B00158177 /* DestinationAnnotationView.swift in Sources */,
 				F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */,
 				F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */,
 				F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */,
@@ -329,6 +334,7 @@
 			files = (
 				F9575EF819FFE0FB003E69EA /* LilianaTests.swift in Sources */,
 				EFC01C7A1A36F8A700F64AB0 /* MapViewController.swift in Sources */,
+				EFF1CD9E1A3A925B00158177 /* DestinationAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

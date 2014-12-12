@@ -3,7 +3,7 @@
 //  Liliana
 //
 //  Created by r-ogata on 2014/12/09.
-//  Copyright (c) 2014年 rogata. All rights reserved.
+//  Copyright (c) 2014 rogata. All rights reserved.
 //
 
 import UIKit
@@ -17,6 +17,8 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
     var locationManager:CLLocationManager!
     var userLocation:CLLocation!
     var destinationLocation:CLLocation!
+    var destinationAnnotation:MKAnnotation!
+    var destinationAnnotationView:MKAnnotationView!
     var isVisiblePolyLine = false
     var polyline:MKPolyline!
     
@@ -44,7 +46,6 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
         self.mapView.mapType = MKMapType.Standard
         self.mapView.showsUserLocation = true
         self.mapView.delegate = self
-        
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -71,6 +72,9 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
         self.redrawPolyline()
     }
     @IBAction func moveToDestination(sender: AnyObject) {
+        if (destinationLocation == nil) {
+            return;
+        }
         self.mapView.setCenterCoordinate(destinationLocation.coordinate, animated: true)
     }
     
@@ -115,13 +119,29 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
         return nil
     }
     
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        // 目的地ピンを初期化
+        if (destinationAnnotationView == nil) {
+            destinationAnnotationView = self.mapView.dequeueReusableAnnotationViewWithIdentifier(DestinationAnnotationView.identifier())
+            if (destinationAnnotationView == nil) {
+                destinationAnnotationView = DestinationAnnotationView(
+                    annotation: annotation,
+                    reuseIdentifier: DestinationAnnotationView.identifier())
+            }
+        }
+        // 目的地がセットされてたら描画
+        if (destinationLocation != nil) {
+            return destinationAnnotationView
+        }
+        return nil
+    }
     /**
     UITapGestureRecognizer
     
     :param: sender UITapGestureRecognizer
     */
-    @IBAction func didTappedMapView(sender: UITapGestureRecognizer) {
-        if (sender.state != UIGestureRecognizerState.Ended) {
+    @IBAction func didLongPressedMapView(sender: UILongPressGestureRecognizer) {
+        if (sender.state != UIGestureRecognizerState.Began) {
             return
         }
         // タップした位置を緯度経度に変換してサークルを表示
@@ -130,9 +150,16 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
         destinationLocation = CLLocation(
             latitude:center.latitude as CLLocationDegrees,
             longitude:center.longitude as CLLocationDegrees)
-        self.mapView.setCenterCoordinate(destinationLocation.coordinate, animated: true)
         self.isVisiblePolyLine = true
         self.redrawPolyline()
+        // アノテーションを削除・追加
+        if (destinationAnnotation != nil) {
+            self.mapView.removeAnnotation(destinationAnnotation)
+        }
+        destinationAnnotation = MKPlacemark(
+            coordinate: destinationLocation.coordinate,
+            addressDictionary: nil)
+        self.mapView.addAnnotation(destinationAnnotation)
     }
 
 }
