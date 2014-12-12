@@ -12,7 +12,7 @@ import MapKit
 class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var bottomMenuView: UIView!
+    @IBOutlet var mapButtons: [UIButton]!
     
     var locationManager:CLLocationManager!
     var userLocation:CLLocation!
@@ -22,8 +22,6 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
     var isVisiblePolyLine = false
     var polyline:MKPolyline!
     
-    @IBOutlet var mapButtons: [UIButton]!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         for btn in mapButtons {
@@ -73,7 +71,7 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
     }
     @IBAction func moveToDestination(sender: AnyObject) {
         if (destinationLocation == nil) {
-            return;
+            return
         }
         self.mapView.setCenterCoordinate(destinationLocation.coordinate, animated: true)
     }
