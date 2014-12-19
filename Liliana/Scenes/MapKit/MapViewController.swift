@@ -51,8 +51,9 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
     override func viewWillDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         // GPS開始
-        if locationManager == nil  {
+        if locationManager != nil  {
             locationManager.stopUpdatingLocation()
+            locationManager = nil
         }
     }
     override func viewDidDisappear(animated: Bool) {
@@ -119,17 +120,22 @@ class MapViewController : UIViewController, MKMapViewDelegate, CLLocationManager
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         // 目的地ピンを初期化
-        if (destinationAnnotationView == nil) {
-            destinationAnnotationView = self.mapView.dequeueReusableAnnotationViewWithIdentifier(DestinationAnnotationView.identifier())
-            if (destinationAnnotationView == nil) {
-                destinationAnnotationView = DestinationAnnotationView(
-                    annotation: annotation,
-                    reuseIdentifier: DestinationAnnotationView.identifier())
-            }
+        if (annotation.isKindOfClass(MKUserLocation)) {
+            // ユーザーのピンはデフォルトのものを使うので何もしない
         }
-        // 目的地がセットされてたら描画
-        if (destinationLocation != nil) {
-            return destinationAnnotationView
+        else if (annotation.isKindOfClass(MKPlacemark)) {
+            if (destinationAnnotationView == nil) {
+                destinationAnnotationView = self.mapView.dequeueReusableAnnotationViewWithIdentifier(DestinationAnnotationView.identifier())
+                if (destinationAnnotationView == nil) {
+                    destinationAnnotationView = DestinationAnnotationView(
+                        annotation: annotation,
+                        reuseIdentifier: DestinationAnnotationView.identifier())
+                }
+            }
+            // 目的地がセットされてたら描画
+            if (destinationLocation != nil) {
+                return destinationAnnotationView
+            }
         }
         return nil
     }
