@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wyc-uN-ncE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wyc-uN-ncE">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -65,12 +65,28 @@
                                     <segue destination="Ku4-tQ-69O" kind="show" id="r1l-9h-vpK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2H-i4-4ev">
+                                <rect key="frame" x="141" y="304" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="WNF-gi-b51"/>
+                                    <constraint firstAttribute="width" constant="132" id="xYb-UL-dGt"/>
+                                </constraints>
+                                <state key="normal" title="MapKitView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="oOl-Vh-H24"/>
+                                    <action selector="touchUpInsideButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OFf-GU-5cB"/>
+                                    <segue destination="4UW-fH-32V" kind="show" id="jlX-l9-D37"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mrj-2p-EQg" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="24x-Fc-oLP"/>
                             <constraint firstItem="rVX-Ts-eub" firstAttribute="top" secondItem="hTk-Ws-dMA" secondAttribute="bottom" constant="24" id="3zU-L2-1jy"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="JaD-nN-rbV"/>
+                            <constraint firstAttribute="centerX" secondItem="Z2H-i4-4ev" secondAttribute="centerX" id="JuZ-1f-Oka"/>
                             <constraint firstItem="hTk-Ws-dMA" firstAttribute="centerX" secondItem="mrj-2p-EQg" secondAttribute="centerX" id="La6-ve-PDT"/>
                             <constraint firstItem="mrj-2p-EQg" firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="LhK-Bb-VYj"/>
                             <constraint firstItem="mrj-2p-EQg" firstAttribute="top" secondItem="ZHg-Cd-uGI" secondAttribute="bottom" constant="24" id="QAF-b9-bdf"/>
@@ -78,6 +94,7 @@
                             <constraint firstItem="hTk-Ws-dMA" firstAttribute="top" secondItem="mrj-2p-EQg" secondAttribute="bottom" constant="24" id="cFV-lF-56o"/>
                             <constraint firstItem="ZHg-Cd-uGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="eq1-Cu-FZ1"/>
                             <constraint firstAttribute="centerX" secondItem="ZHg-Cd-uGI" secondAttribute="centerX" id="uR6-DW-6X9"/>
+                            <constraint firstItem="Z2H-i4-4ev" firstAttribute="top" secondItem="rVX-Ts-eub" secondAttribute="bottom" constant="24" id="w2w-xI-svB"/>
                             <constraint firstItem="hTk-Ws-dMA" firstAttribute="centerX" secondItem="rVX-Ts-eub" secondAttribute="centerX" id="yVV-Eu-wE4"/>
                         </constraints>
                         <variation key="default">
@@ -179,6 +196,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bP1-0q-gJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1788" y="1243"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="K27-wl-gG5">
+            <objects>
+                <viewController id="4UW-fH-32V" customClass="MapViewController" customModule="Liliana" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ram-sA-YXd"/>
+                        <viewControllerLayoutGuide type="bottom" id="LO9-vA-E44"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mJ2-b5-0dU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WhU-DC-Ivr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YlG-ql-vxy" appends="YES" id="Tzz-sF-y8J"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4f-5Q-iEd">
+                                <rect key="frame" x="16" y="560" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8Zs-F4-SQJ"/>
+                                    <constraint firstAttribute="width" constant="44" id="WUy-ns-x9M"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="location1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToUserLocation:" destination="4UW-fH-32V" eventType="touchUpInside" id="6aN-8c-EV7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-mu-EBX">
+                                <rect key="frame" x="16" y="612" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="HyF-yh-kRF"/>
+                                    <constraint firstAttribute="height" constant="44" id="iiJ-XP-FeO"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="location2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePolyline:" destination="4UW-fH-32V" eventType="touchUpInside" id="0mw-ZX-mc3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-Xv-ZbM">
+                                <rect key="frame" x="16" y="672" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="DgL-70-qxC"/>
+                                    <constraint firstAttribute="height" constant="44" id="fee-mS-yCg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="flag">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToDestination:" destination="4UW-fH-32V" eventType="touchUpInside" id="6eB-54-EyW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WhU-DC-Ivr" firstAttribute="bottom" secondItem="LO9-vA-E44" secondAttribute="top" id="9cj-3b-3Us"/>
+                            <constraint firstAttribute="trailing" secondItem="WhU-DC-Ivr" secondAttribute="trailing" id="CbG-ux-t86"/>
+                            <constraint firstItem="l4f-5Q-iEd" firstAttribute="leading" secondItem="mJ2-b5-0dU" secondAttribute="leadingMargin" id="GpM-R2-lZL"/>
+                            <constraint firstItem="WhU-DC-Ivr" firstAttribute="top" secondItem="mJ2-b5-0dU" secondAttribute="top" id="Lut-ua-IgX"/>
+                            <constraint firstItem="AiE-mu-EBX" firstAttribute="leading" secondItem="mJ2-b5-0dU" secondAttribute="leadingMargin" id="TqL-Ky-ZIs"/>
+                            <constraint firstItem="dsa-Xv-ZbM" firstAttribute="top" secondItem="AiE-mu-EBX" secondAttribute="bottom" constant="16" id="UiL-fZ-AHo"/>
+                            <constraint firstItem="LO9-vA-E44" firstAttribute="top" secondItem="dsa-Xv-ZbM" secondAttribute="bottom" constant="20" id="Xa1-nr-oQP"/>
+                            <constraint firstItem="WhU-DC-Ivr" firstAttribute="leading" secondItem="mJ2-b5-0dU" secondAttribute="leading" id="qKw-bE-C4p"/>
+                            <constraint firstItem="AiE-mu-EBX" firstAttribute="top" secondItem="l4f-5Q-iEd" secondAttribute="bottom" constant="8" id="rS0-fD-jWk"/>
+                            <constraint firstItem="dsa-Xv-ZbM" firstAttribute="leading" secondItem="mJ2-b5-0dU" secondAttribute="leadingMargin" id="wE5-hV-VzZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="WhU-DC-Ivr" id="p7m-fI-nie"/>
+                        <outletCollection property="mapButtons" destination="l4f-5Q-iEd" collectionClass="NSMutableArray" id="ngZ-m7-3W3"/>
+                        <outletCollection property="mapButtons" destination="AiE-mu-EBX" collectionClass="NSMutableArray" id="lX0-gC-08d"/>
+                        <outletCollection property="mapButtons" destination="dsa-Xv-ZbM" collectionClass="NSMutableArray" id="NEP-pj-iz0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGr-W6-A76" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="YlG-ql-vxy" userLabel="MapView Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="didLongPressedMapView:" destination="4UW-fH-32V" id="tGl-P6-yAn"/>
+                        <outlet property="delegate" destination="4UW-fH-32V" id="6Xr-BE-Ie0"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1788" y="2076"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nVQ-dc-Jqn">
@@ -377,6 +488,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="flag" width="85" height="85"/>
+        <image name="location1" width="85" height="85"/>
+        <image name="location2" width="85" height="85"/>
         <image name="yukikotan" width="138" height="200"/>
     </resources>
 </document>

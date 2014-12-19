@@ -11,6 +11,12 @@
 		EF0AC2A81A0CA77D000B0B42 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A41A0CA77D000B0B42 /* ImageCollectionViewCell.swift */; };
 		EF0AC2A91A0CA77D000B0B42 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A51A0CA77D000B0B42 /* ImageCollectionViewController.swift */; };
 		EF0AC2AA1A0CA77D000B0B42 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AC2A61A0CA77D000B0B42 /* ImageView.swift */; };
+		EFC01C791A36F8A700F64AB0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC01C781A36F8A700F64AB0 /* MapViewController.swift */; };
+		EFC01C7A1A36F8A700F64AB0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC01C781A36F8A700F64AB0 /* MapViewController.swift */; };
+		EFC01C7D1A36F8C300F64AB0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC01C7C1A36F8C300F64AB0 /* MapKit.framework */; };
+		EFC01C7F1A36F8CD00F64AB0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC01C7E1A36F8CD00F64AB0 /* CoreLocation.framework */; };
+		EFF1CD9D1A3A925B00158177 /* DestinationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF1CD9C1A3A925B00158177 /* DestinationAnnotationView.swift */; };
+		EFF1CD9E1A3A925B00158177 /* DestinationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF1CD9C1A3A925B00158177 /* DestinationAnnotationView.swift */; };
 		EFFC8FEC1A035312004347D5 /* UIImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */; };
 		F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9575EDE19FFE0FB003E69EA /* AppDelegate.swift */; };
 		F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9575EE019FFE0FB003E69EA /* Liliana.xcdatamodeld */; };
@@ -41,6 +47,10 @@
 		EF0AC2A41A0CA77D000B0B42 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF0AC2A51A0CA77D000B0B42 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		EF0AC2A61A0CA77D000B0B42 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		EFC01C781A36F8A700F64AB0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EFC01C7C1A36F8C300F64AB0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EFC01C7E1A36F8CD00F64AB0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EFF1CD9C1A3A925B00158177 /* DestinationAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationAnnotationView.swift; sourceTree = "<group>"; };
 		EFFC8FEB1A035312004347D5 /* UIImageView+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Loader.swift"; sourceTree = "<group>"; };
 		F9575ED919FFE0FB003E69EA /* Liliana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liliana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9575EDD19FFE0FB003E69EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC01C7F1A36F8CD00F64AB0 /* CoreLocation.framework in Frameworks */,
+				EFC01C7D1A36F8C300F64AB0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,12 +101,31 @@
 			path = Picture;
 			sourceTree = "<group>";
 		};
+		EFC01C771A36F89C00F64AB0 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				EFC01C781A36F8A700F64AB0 /* MapViewController.swift */,
+				EFF1CD9C1A3A925B00158177 /* DestinationAnnotationView.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		EFC01C7B1A36F8AF00F64AB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFC01C7E1A36F8CD00F64AB0 /* CoreLocation.framework */,
+				EFC01C7C1A36F8C300F64AB0 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9575ED019FFE0FB003E69EA = {
 			isa = PBXGroup;
 			children = (
 				F9575EDB19FFE0FB003E69EA /* Liliana */,
 				F9575EF419FFE0FB003E69EA /* LilianaTests */,
 				F9575EDA19FFE0FB003E69EA /* Products */,
+				EFC01C7B1A36F8AF00F64AB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +192,7 @@
 				F9CC14E41A01366800B238A5 /* TableView */,
 				EF0AC2A21A0CA77D000B0B42 /* Picture */,
 				F976DA6B1A0A72D200D8BA2C /* GestureRecognizer */,
+				EFC01C771A36F89C00F64AB0 /* MapKit */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -281,10 +313,12 @@
 			files = (
 				EF0AC2AA1A0CA77D000B0B42 /* ImageView.swift in Sources */,
 				F9575EE419FFE0FB003E69EA /* TopViewController.swift in Sources */,
+				EFF1CD9D1A3A925B00158177 /* DestinationAnnotationView.swift in Sources */,
 				F9575EE219FFE0FB003E69EA /* Liliana.xcdatamodeld in Sources */,
 				F9575EDF19FFE0FB003E69EA /* AppDelegate.swift in Sources */,
 				F9CC14EA1A01368C00B238A5 /* ArticleCell.swift in Sources */,
 				F9CC14EC1A01396500B238A5 /* ArticleModel.swift in Sources */,
+				EFC01C791A36F8A700F64AB0 /* MapViewController.swift in Sources */,
 				EF0AC2A91A0CA77D000B0B42 /* ImageCollectionViewController.swift in Sources */,
 				F9CC14E81A01366800B238A5 /* MyTableViewController.swift in Sources */,
 				EF0AC2A81A0CA77D000B0B42 /* ImageCollectionViewCell.swift in Sources */,
@@ -299,6 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9575EF819FFE0FB003E69EA /* LilianaTests.swift in Sources */,
+				EFC01C7A1A36F8A700F64AB0 /* MapViewController.swift in Sources */,
+				EFF1CD9E1A3A925B00158177 /* DestinationAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
